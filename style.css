@@ -1,0 +1,367 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+/* PAGE 1 BACKGROUND */
+.page-one {
+  background: linear-gradient(
+    135deg,
+    #2b1055,
+    #4b2c82,
+    #f78fb3
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CENTER CONTAINER */
+.center-container {
+  text-align: center;
+}
+
+/* CLICK BUTTON */
+.enter-button {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: 'Emilys Candy', sans-serif;
+  padding: 18px 40px;
+  color: white;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ff9ff3, #a29bfe);
+  box-shadow: 0 0 25px rgba(255, 159, 243, 0.8);
+  animation: pulse 2s infinite;
+}
+
+/* BUTTON ANIMATION */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(255, 159, 243, 0.6);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px rgba(255, 159, 243, 1);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(255, 159, 243, 0.6);
+  }
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 480px) {
+  .enter-button {
+    font-size: 1.4rem;
+    padding: 16px 34px;
+  }
+}
+
+/* =========================
+   PAGE 2 — BIRTHDAY
+========================= */
+
+.page-birthday {
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("v1013-p-0023a.jpg") center/cover no-repeat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* CONTENT BOX */
+.birthday-content {
+  max-width: 500px;
+}
+
+/* TITLE */
+.birthday-content h1 {
+  font-size: 2.2rem;
+  font-family: 'Bellota', sans-serif;
+  margin-bottom: 20px;
+}
+
+/* MESSAGE */
+.birthday-message {
+  font-size: 1.05rem;
+  font-family: 'Bellota', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  background: rgba(255,255,255,0.12);
+  padding: 18px;
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+}
+
+/* NEXT BUTTON */
+.next-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 14px 30px;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #ff9ff3, #a29bfe);
+  color: white;
+  font-size: 1.1rem;
+  font-family: 'Bellota', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 20px rgba(255,159,243,0.7);
+}
+
+/* MUSIC TOGGLE */
+.music-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 14px;
+  border-radius: 50%;
+}
+
+/* =========================
+   PAGE 3 — LOVE LETTER
+========================= */
+
+.page-letter {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #050505, #0b0f2b);
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* LETTER BOX */
+.letter-container {
+  max-width: 520px;
+}
+
+/* TITLE */
+.letter-container h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  color: #dcd6ff;
+}
+
+/* LETTER TEXT */
+.letter-text {
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.9;
+  color: #e0e0e0;
+  background: rgba(255,255,255,0.05);
+  padding: 22px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+/* DARK BUTTON */
+.next-button.dark {
+  background: linear-gradient(135deg, #6c5ce7, #341f97);
+  box-shadow: 0 0 18px rgba(108,92,231,0.6);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   PAGE 4 — LINKS
+========================= */
+
+.page-links {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  color: #2d2d2d;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.links-container {
+  max-width: 500px;
+}
+
+.links-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-bottom: 25px;
+}
+
+/* GRID */
+.links-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+/* CARDS */
+.link-card {
+  text-decoration: none;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 239, 250, 0.75);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d2d2d;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* FOOTER TEXT */
+.closing-text {
+  font-size: 1.05 rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.hearts-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.heart {
+  position: absolute;
+  bottom: -20px;
+  font-size: 18px;
+  opacity: 0.8;
+  animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateY(-120vh) scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* =========================
+   PAGE 5 — MINI LOVE CARDS
+========================= */
+
+.page-cards {
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url("56cba762-bef5-4748-9be2-f893e9c83de3.jpg") center/cover no-repeat;
+  font-family: 'Amatic SC', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+
+.cards-wrapper {
+  max-width: 520px;
+}
+
+/* TITLE */
+.cards-wrapper h1 {
+  font-size: 2.3rem;
+  margin-bottom: 25px;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+/* CARD CONTAINER */
+.card-container {
+  position: relative;
+  height: 200px;
+  margin-bottom: 25px;
+}
+
+/* GLASS CARD */
+.card {
+  position: absolute;
+  inset: 0;
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateX(40px) scale(0.95);
+  transition: all 0.45s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* ACTIVE CARD */
+.card.active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+/* BUTTONS */
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card-buttons button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1.0px;
+  background: linear-gradient(135deg, #ffecfd, #a29bfe);
+  color: white;
+  box-shadow: 0 0 15px rgba(255, 245, 254, 0.7);
+}
+
