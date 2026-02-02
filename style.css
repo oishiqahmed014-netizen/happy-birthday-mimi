@@ -274,7 +274,7 @@ body {
   background: 
     linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
     url("56cba762-bef5-4748-9be2-f893e9c83de3.jpg") center/cover no-repeat;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -354,6 +354,7 @@ body {
   color: white;
   box-shadow: 0 0 15px rgba(255, 245, 254, 0.7);
 }
+
 
 
 
